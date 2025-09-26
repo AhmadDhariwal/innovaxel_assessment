@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Access Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Employee Access Simulator</h1>
+
+  <div class="section room-rules">
+    <h2>Room Access Rules</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Room</th>
+          <th>Min Access Level</th>
+          <th>Open Time</th>
+          <th>Close Time</th>
+          <th>Cooldown (mins)</th>
+        </tr>
+      </thead>
+      <tbody id="roomRulesTable"></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Employee Access Requests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Access Level</th>
+          <th>Request Time</th>
+          <th>Room</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTable"></tbody>
+    </table>
+  </div>
+
+  <button id="simulateBtn">Simulate Access</button>
+
+  <div class="section" id="resultsSection" style="display: none;">
+    <h2>Access Simulation Results</h2>
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Room</th>
+          <th>Request Time</th>
+          <th>Status</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody id="resultsTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
